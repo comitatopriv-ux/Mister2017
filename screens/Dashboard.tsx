@@ -2,7 +2,7 @@ import React, { useState, useMemo } from 'react';
 import { Plus, Shield, Trophy, Activity, BrainCircuit } from 'lucide-react';
 import { useAppContext } from '../context/AppContext';
 import { Match } from '../types';
-import MatchModal from './matches/MatchModal'; 
+import MatchModal from './matches/MatchModal.tsx';
 import AiInsightCard from '../components/AiInsightCard';
 
 const StatCard: React.FC<{ icon: React.ElementType; label: string; value: string | number; color: string }> = ({ icon: Icon, label, value, color }) => (
