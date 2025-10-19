@@ -5,7 +5,7 @@ import { Match } from '../../types';
 import MatchModal from './matches/MatchModal';
 import OpponentsList from './matches/OpponentsList';
 import OpponentDetailModal from './matches/OpponentDetailModal';
-import ConfirmationModal from '../../components/common/ConfirmationModal';
+import ConfirmationModal from '../../components/common/ConfirmationModal.tsx';
 import MatchEditModal from './matches/MatchEditModal';
 
 const MatchCard: React.FC<{ match: Match; onEdit: () => void; onDelete: () => void; onShowReport: () => void; }> = ({ match, onEdit, onDelete, onShowReport }) => {
