@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Plus, Edit, Trash2 } from 'lucide-react';
-import { useAppContext } from '../../context/AppContext';
+import { useAppContext } from '../context/AppContext';
 import { Match } from '../../types';
 import MatchModal from './matches/MatchModal';
 import OpponentsList from './matches/OpponentsList';
