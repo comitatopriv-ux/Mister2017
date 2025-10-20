@@ -1,3 +1,4 @@
+console.log("🧠 AppContext inizializzato");
 import React, { createContext, useContext, useState, useCallback } from 'react';
 import useLocalStorage from '../hooks/useLocalStorage';
 import {
