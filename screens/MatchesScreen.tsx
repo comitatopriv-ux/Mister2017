@@ -5,8 +5,9 @@ import { Match } from '../../types';
 import MatchModal from './matches/MatchModal';
 import OpponentsList from './matches/OpponentsList';
 import OpponentDetailModal from './matches/OpponentDetailModal';
-import ConfirmationModal from '../../components/common/ConfirmationModal.tsx';
-import MatchEditModal from './matches/MatchEditModal';
+import ConfirmationModal from '../components/common/ConfirmationModal';
+import Toast from '../components/common/Toast';
+import MatchReportModal from '../components/common/MatchReportModal';
 
 const MatchCard: React.FC<{ match: Match; onEdit: () => void; onDelete: () => void; onShowReport: () => void; }> = ({ match, onEdit, onDelete, onShowReport }) => {
     const { tournaments } = useAppContext();
