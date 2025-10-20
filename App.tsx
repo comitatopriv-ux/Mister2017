@@ -72,3 +72,8 @@ try {
     </div>
   );
 }
+
+// 👇 CHIUDI IL COMPONENTE QUI!
+};
+
+export default App;
