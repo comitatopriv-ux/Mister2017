@@ -34,6 +34,7 @@ const App: React.FC = () => {
     }
   };
 
+try {
   return (
     <>
       {activeTeamId ? (
@@ -41,7 +42,7 @@ const App: React.FC = () => {
           {renderScreen()}
         </Layout>
       ) : (
-        <div className="h-screen w-screen flex items-center justify-center">
+        <div className="h-screen flex items-center justify-center">
           <TeamsScreen />
         </div>
       )}
@@ -53,6 +54,21 @@ const App: React.FC = () => {
       />
     </>
   );
-};
-
-export default App;
+} catch (err) {
+  console.error("❌ Errore durante il render:", err);
+  return (
+    <div
+      style={{
+        background: "black",
+        color: "lime",
+        padding: "20px",
+        whiteSpace: "pre-wrap",
+        fontFamily: "monospace",
+      }}
+    >
+      ⚠️ ERRORE NEL RENDER:
+      {"\n\n"}
+      {String(err && (err.stack || err.message || err))}
+    </div>
+  );
+}
