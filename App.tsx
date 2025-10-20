@@ -9,6 +9,7 @@ import CoachesScreen from './screens/CoachesScreen';
 import TeamsScreen from './screens/TeamsScreen';
 import Toast from './components/common/Toast';
 import MatchReportModal from './components/common/MatchReportModal';
+console.log("✅ App loaded");
 
 const App: React.FC = () => {
   const { activeTab, activeTeamId, toast, reportingMatchId, clearMatchReport } = useAppContext();
